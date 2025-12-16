@@ -3,6 +3,10 @@
 This repository provides a reusable **Markdown document skeleton** designed to be compiled with **Pandoc**.  
 It is intended as a launchpad for reports, academic writing, teaching materials, and other structured documents.
 
+The benefit of using Pandoc is that it lets you write Markdown documents made up of
+separate, well-organised sections, while also handling citations and reference lists
+automatically.
+
 ---
 
 ## ✨ Features
@@ -25,7 +29,7 @@ It is intended as a launchpad for reports, academic writing, teaching materials,
 ├── LICENSE
 ├── description.yaml
 ├── bibliography/ 
-│   └── 999-appendix.md
+│   └── bibliography.bib
 ├── sections/
 │   ├── 001-intro.md
 │   ├── 997-conclusion.md
