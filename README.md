@@ -3,8 +3,6 @@
 This repository provides a reusable **Markdown document skeleton** designed to be compiled with **Pandoc**.  
 It is intended as a launchpad for reports, academic writing, teaching materials, and other structured documents.
 
-The template mirrors a LaTeX-style workflow (e.g. `\input`, `\include`) while remaining Markdown-first.
-
 ---
 
 ## ✨ Features
@@ -24,13 +22,15 @@ The template mirrors a LaTeX-style workflow (e.g. `\input`, `\include`) while re
 ```text
 .
 ├── README.md
+├── LICENSE
 ├── description.yaml
+├── bibliography/ 
+│   └── 999-appendix.md
 ├── sections/
-│   ├── intro.md
-│   ├── conclusion.md
-│   ├── bibliography.md
-│   └── appendix.md
-├── main.md
+│   ├── 001-intro.md
+│   ├── 997-conclusion.md
+│   ├── 998-bibliography.md
+│   └── 999-appendix.md
 └── build/
 ````
 
@@ -38,6 +38,9 @@ The template mirrors a LaTeX-style workflow (e.g. `\input`, `\include`) while re
 
 * **`description.yaml`**
   Document metadata (title, author, date, etc.)
+
+* **`bibliography/`**
+  Bibliography file in the BibTex format.
 
 * **`sections/`**
   Individual Markdown files for each logical section of the document.
@@ -72,8 +75,6 @@ Pandoc treats all input files as a single document in the order provided.
 
 ---
 
----
-
 ## 📤 Output Formats
 
 Pandoc can target multiple formats from the same source:
@@ -102,5 +103,4 @@ That’s it.
 
 * [Pandoc](https://pandoc.org/)
 
----
 
