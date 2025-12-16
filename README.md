@@ -95,7 +95,7 @@ You can also add templates, reference documents, or CSS later as needed.
 ## 🚀 Getting Started
 
 1. Clone or copy this repository
-2. Update `metadata.yaml`
+2. Update `description.yaml`
 3. Rename or add files in `sections/`
 4. Build using Pandoc
 
